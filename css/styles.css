@@ -1,0 +1,115 @@
+.body {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    height:100%;
+}
+
+.h1, .h2, .h3, .h4, .h5, .h6 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+body, html{
+margin: 0;
+padding: 0;
+height: 100%;}
+
+#content {min-height: 100%; }
+#landingPhoto {
+    background: url("../Images/landing.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    display: table;
+    width: 100%;
+    height: 100%;
+}
+#landingContent {
+    display: table-cell;
+    vertical-align: middle;
+}
+#aboutMe, #moreProjects {
+    background-color: #f26522;
+    color: #fff;
+}
+
+/*************************************/
+/** OVERRIDE BOOTSTRAP PRIMARY BUTTON
+/*************************************/
+.btn-primary{
+    color:#fff;
+    /*background-color:#fa6b63; */
+    background-color:#f26522;
+    border-color:#f26522;
+}
+.btn-primary:hover{
+    color:#fff;
+    background-color:#cc480a;
+    border-color:#cc480a;
+}
+.btn-primary.focus,.btn-primary:focus{
+    /*box-shadow:0 0 0 .2rem rgba(0,123,255,.5); */
+    box-shadow:none;
+}
+.btn-primary.disabled,.btn-primary:disabled{
+    color:#fff;
+    background-color:#f26522;
+    border-color:#f26522;
+}
+.btn-primary:not(:disabled):not(.disabled).active,.btn-primary:not(:disabled):not(.disabled):active,.show>.btn-primary.dropdown-toggle{
+    color:#fff;
+    background-color:#f26522;
+    border-color:#f26522;
+}
+.btn-primary:not(:disabled):not(.disabled).active:focus,.btn-primary:not(:disabled):not(.disabled):active:focus,.show>.btn-primary.dropdown-toggle:focus{
+    /*box-shadow:0 0 0 .2rem rgba(0,123,255,.5); */
+    box-shadow:none;
+}
+
+.badge-info {
+    background-color: #5cadce;
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 0px) {
+    #homePhoto {
+        height: 400px;
+    }
+    #homeContent {
+        padding: 40px 40px;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    #homePhoto {
+        height: 700px;
+    }
+    #homeContent {
+        padding: 40px 60px;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    #homePhoto {
+        height: 700px;
+    }
+    #homeContent {
+        padding: 40px 100px;
+    }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    #homePhoto {
+        height: 840px;
+    }
+    #homeContent {
+        padding: 40px 200px;
+    }
+}
